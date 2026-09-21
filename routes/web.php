@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\GuruController;
 use App\Http\Controllers\Admin\GaleriController;
+use App\Http\Controllers\Admin\BeritaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,5 +20,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('guru', GuruController::class);
         Route::resource('galeri', GaleriController::class);
+        Route::resource('berita', BeritaController::class);
     });
 });
