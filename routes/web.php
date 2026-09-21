@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\GuruController;
+use App\Http\Controllers\Admin\GaleriController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,5 +18,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('auth')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('guru', GuruController::class);
+        Route::resource('galeri', GaleriController::class);
     });
 });
