@@ -1,37 +1,35 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Edit Guru - Admin</title>
-</head>
-<body style="font-family: sans-serif; margin:0;">
-    <div style="background:#1e40af; color:white; padding:1rem 2rem;">
-        <span>PAUD Al-Barokah - Admin Dashboard</span>
-    </div>
+@extends('layouts.admin')
+@section('title', 'Edit Guru - Admin')
 
-    <div style="padding:2rem; max-width:400px;">
-        <a href="{{ route('guru.index') }}">&larr; Kembali</a>
-        <h2>Edit Data Guru</h2>
+@section('content')
+    <a href="{{ route('admin.guru.index') }}" class="btn-back">&larr; Kembali</a>
+    <h1>Edit Data Guru</h1>
 
-        <form action="{{ route('guru.update', $guru->id_guru) }}" method="POST" enctype="multipart/form-data">
+    <div class="form-card">
+        <form action="{{ route('admin.guru.update', $guru->id_guru) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
-            <label>Nama</label><br>
-            <input type="text" name="nama" value="{{ old('nama', $guru->nama) }}" style="width:100%; padding:8px; margin-bottom:1rem; box-sizing:border-box;"><br>
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" name="nama" value="{{ old('nama', $guru->nama) }}">
+            </div>
 
-            <label>Jabatan</label><br>
-            <input type="text" name="jabatan" value="{{ old('jabatan', $guru->jabatan) }}" style="width:100%; padding:8px; margin-bottom:1rem; box-sizing:border-box;"><br>
+            <div class="form-group">
+                <label>Jabatan</label>
+                <input type="text" name="jabatan" value="{{ old('jabatan', $guru->jabatan) }}">
+            </div>
 
             @if ($guru->foto)
-                <img src="{{ asset('storage/' . $guru->foto) }}" width="80"><br><br>
+                <img src="{{ asset('storage/' . $guru->foto) }}" width="80" style="border-radius:8px; margin-bottom:1rem;"><br>
             @endif
 
-            <label>Ganti Foto (kosongkan jika tidak diubah)</label><br>
-            <input type="file" name="foto" style="margin-bottom:1rem;"><br>
+            <div class="form-group">
+                <label>Ganti Foto (kosongkan jika tidak diubah)</label>
+                <input type="file" name="foto">
+            </div>
 
-            <button type="submit" style="padding:10px 20px; background:#1e40af; color:white; border:none; border-radius:5px;">Update</button>
+            <button type="submit" class="btn">Update</button>
         </form>
     </div>
-</body>
-</html>
+@endsection

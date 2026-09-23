@@ -1,38 +1,38 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Tambah Berita - Admin</title>
-</head>
-<body style="font-family: sans-serif; margin:0;">
-    <div style="background:#1e40af; color:white; padding:1rem 2rem;">
-        <span>PAUD Al-Barokah - Admin Dashboard</span>
-    </div>
+@extends('layouts.admin')
+@section('title', 'Tambah Berita - Admin')
 
-    <div style="padding:2rem; max-width:500px;">
-        <a href="{{ route('berita.index') }}">&larr; Kembali</a>
-        <h2>Tambah Berita</h2>
+@section('content')
+    <a href="{{ route('admin.berita.index') }}" class="btn-back">&larr; Kembali</a>
+    <h1>Tambah Berita</h1>
 
-        <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+    <div class="form-card" style="max-width:600px;">
+        <form action="{{ route('admin.berita.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
-            <label>Judul</label><br>
-            <input type="text" name="judul" value="{{ old('judul') }}" style="width:100%; padding:8px; margin-bottom:1rem; box-sizing:border-box;"><br>
-            @error('judul') <span style="color:red;">{{ $message }}</span> @enderror
+            <div class="form-group">
+                <label>Judul</label>
+                <input type="text" name="judul" value="{{ old('judul') }}">
+                @error('judul') <span class="error-text">{{ $message }}</span> @enderror
+            </div>
 
-            <label>Tanggal</label><br>
-            <input type="date" name="tanggal" value="{{ old('tanggal') }}" style="width:100%; padding:8px; margin-bottom:1rem; box-sizing:border-box;"><br>
-            @error('tanggal') <span style="color:red;">{{ $message }}</span> @enderror
+            <div class="form-group">
+                <label>Tanggal</label>
+                <input type="date" name="tanggal" value="{{ old('tanggal') }}">
+                @error('tanggal') <span class="error-text">{{ $message }}</span> @enderror
+            </div>
 
-            <label>Isi Berita</label><br>
-            <textarea name="isi" rows="6" style="width:100%; padding:8px; margin-bottom:1rem; box-sizing:border-box;">{{ old('isi') }}</textarea><br>
-            @error('isi') <span style="color:red;">{{ $message }}</span> @enderror
+            <div class="form-group">
+                <label>Isi Berita</label>
+                <textarea name="isi" rows="6">{{ old('isi') }}</textarea>
+                @error('isi') <span class="error-text">{{ $message }}</span> @enderror
+            </div>
 
-            <label>Gambar</label><br>
-            <input type="file" name="gambar" style="margin-bottom:1rem;"><br>
-            @error('gambar') <span style="color:red;">{{ $message }}</span> @enderror
+            <div class="form-group">
+                <label>Gambar</label>
+                <input type="file" name="gambar">
+                @error('gambar') <span class="error-text">{{ $message }}</span> @enderror
+            </div>
 
-            <button type="submit" style="padding:10px 20px; background:#1e40af; color:white; border:none; border-radius:5px;">Simpan</button>
+            <button type="submit" class="btn">Simpan</button>
         </form>
     </div>
-</body>
-</html>
+@endsection
