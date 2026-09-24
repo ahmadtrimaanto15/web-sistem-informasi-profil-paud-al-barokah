@@ -1,27 +1,25 @@
 @extends('layouts.public')
-
 @section('title', 'Berita - PAUD Al-Barokah')
 
 @section('content')
-    <h1 style="color:#1e40af;">Berita & Kegiatan</h1>
+@include('partials.banner', ['title' => 'Berita & Pengumuman', 'subtitle' => 'Ikuti terus informasi terbaru dan keseruan kegiatan anak-anak di sekolah kami.'])
 
-    <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:2rem;">
+<div style="max-width:1100px; margin:0 auto; padding:3rem 2rem;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:1.5rem;">
         @forelse ($berita as $item)
-            <div style="border:1px solid #e2e8f0; border-radius:10px; padding:1rem; width:280px;">
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
                 @if ($item->gambar)
-                    <img src="{{ asset('storage/' . $item->gambar) }}" style="width:100%; height:160px; object-fit:cover; border-radius:8px;">
-                @else
-                    <div style="width:100%; height:160px; background:#e0e7ff; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#94a3b8;">
-                        Tanpa Gambar
-                    </div>
+                    <img src="{{ asset('storage/' . $item->gambar) }}" style="width:100%; height:160px; object-fit:cover;">
                 @endif
-                <h3 style="margin-bottom:0.2rem;">{{ $item->judul }}</h3>
-                <p style="color:#64748b; font-size:0.9rem; margin-top:0;">{{ $item->tanggal->format('d-m-Y') }}</p>
-                <p style="font-size:0.9rem;">{{ Str::limit($item->isi, 80) }}</p>
-                <a href="{{ route('berita.detail', $item->id_berita) }}" style="color:#1e40af; font-weight:bold; text-decoration:none;">Baca selengkapnya &rarr;</a>
+                <div style="padding:1rem;">
+                    <h3 style="color:#1e293b; margin-bottom:0.3rem;">{{ $item->judul }}</h3>
+                    <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:0.6rem;">{{ $item->tanggal->format('d-m-Y') }}</p>
+                    <a href="{{ route('berita.detail', $item->id_berita) }}" style="color:#1e40af; font-weight:600; text-decoration:none; font-size:0.9rem;">Baca selengkapnya &rarr;</a>
+                </div>
             </div>
         @empty
             <p>Belum ada berita.</p>
         @endforelse
     </div>
+</div>
 @endsection

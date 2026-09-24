@@ -11,7 +11,8 @@ class PublicController extends Controller
     public function beranda()
     {
         $berita = Berita::latest()->take(3)->get();
-        return view('public.beranda', compact('berita'));
+        $galeriTerbaru = Galeri::latest()->take(6)->get();
+        return view('public.beranda', compact('berita', 'galeriTerbaru'));
     }
 
     public function profil()

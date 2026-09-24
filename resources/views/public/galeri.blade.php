@@ -1,29 +1,24 @@
 @extends('layouts.public')
-
 @section('title', 'Galeri - PAUD Al-Barokah')
 
 @section('content')
-    <h1 style="color:#1e40af;">Galeri Kegiatan</h1>
-    <p>Dokumentasi kegiatan belajar dan bermain di PAUD Al-Barokah.</p>
+@include('partials.banner', ['title' => 'Galeri Kegiatan', 'subtitle' => 'Momen-momen keceriaan dan proses belajar anak-anak di PAUD Al-Barokah.'])
 
-    <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:2rem;">
+<div style="max-width:1100px; margin:0 auto; padding:3rem 2rem;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:1.2rem;">
         @forelse ($galeri as $item)
-            <div style="border:1px solid #e2e8f0; border-radius:10px; padding:1rem; width:280px;">
+            <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
                 @if ($item->foto)
-                    <img src="{{ asset('storage/' . $item->foto) }}" style="width:100%; height:180px; object-fit:cover; border-radius:8px;">
-                @else
-                    <div style="width:100%; height:180px; background:#e0e7ff; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#94a3b8;">
-                        Tanpa Foto
-                    </div>
+                    <img src="{{ asset('storage/' . $item->foto) }}" style="width:100%; height:180px; object-fit:cover;">
                 @endif
-                <h3 style="margin-bottom:0.2rem;">{{ $item->judul }}</h3>
-                <p style="color:#64748b; font-size:0.9rem; margin-top:0;">{{ $item->tanggal->format('d-m-Y') }}</p>
-                @if ($item->deskripsi)
-                    <p style="font-size:0.9rem;">{{ Str::limit($item->deskripsi, 80) }}</p>
-                @endif
+                <div style="padding:0.8rem;">
+                    <h3 style="font-size:0.95rem; color:#1e293b; margin-bottom:0.2rem;">{{ $item->judul }}</h3>
+                    <p style="font-size:0.8rem; color:#94a3b8;">{{ $item->tanggal->format('d-m-Y') }}</p>
+                </div>
             </div>
         @empty
             <p>Belum ada data galeri.</p>
         @endforelse
     </div>
+</div>
 @endsection

@@ -45,14 +45,16 @@
 
     <div class="topbar">
         <div>
-            <span>&#128222; (021) 1234 5678</span>
-            <span>&#9993; info@paudalbarokah.sch.id</span>
+            <span>&#128222; (0895) 1501 5175</span>
         </div>
-        <div>Senin - Jumat, 07.00 - 14.00 WIB</div>
+        <div>Senin - Jumat, 08.00 - 12.00 WIB</div>
     </div>
 
     <nav>
-        <div class="logo">PAUD Al-Barokah</div>
+        <div class="logo">
+            PAUD Al-Barokah
+            <div style="font-size:0.7rem; font-weight:400; color:#64748b;">Cerdas - Ceria - Berakhlak Mulia</div>
+        </div>
         <div class="menu">
             <a href="{{ route('beranda') }}" class="{{ request()->routeIs('beranda') ? 'active' : '' }}">Beranda</a>
             <a href="{{ route('profil') }}" class="{{ request()->routeIs('profil') ? 'active' : '' }}">Profil</a>
