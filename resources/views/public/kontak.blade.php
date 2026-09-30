@@ -6,16 +6,16 @@
 
 <div style="max-width:1000px; margin:0 auto; padding:3rem 2rem; display:flex; gap:2rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:280px;">
-        <h3 style="color:#1e40af; margin-bottom:0.3rem;">Alamat Sekolah</h3>
+        <h3 style="color:#0B3D91; margin-bottom:0.3rem;">Alamat Sekolah</h3>
         <p style="color:#334155; margin-bottom:1.2rem;">Kedung Dalem, Kec. Mauk, Kab. Tangerang, Banten</p>
 
-        <h3 style="color:#1e40af; margin-bottom:0.3rem;">Telepon / WhatsApp</h3>
+        <h3 style="color:#0B3D91; margin-bottom:0.3rem;">Telepon / WhatsApp</h3>
         <p style="color:#334155; margin-bottom:1.2rem;">(0895) 1501 5175</p>
 
-        <h3 style="color:#1e40af; margin-bottom:0.3rem;">Email</h3>
+        <h3 style="color:#0B3D91; margin-bottom:0.3rem;">Email</h3>
         <p style="color:#334155; margin-bottom:1.2rem;">info@paudalbarokah.sch.id</p>
 
-        <h3 style="color:#1e40af; margin-bottom:0.3rem;">Jam Operasional</h3>
+        <h3 style="color:#0B3D91; margin-bottom:0.3rem;">Jam Operasional</h3>
         <p style="color:#334155;">Senin - Jumat: 08.00 - 12.00<br>Sabtu & Minggu: Libur</p>
     </div>
     <div style="flex:1; min-width:280px;">

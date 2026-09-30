@@ -9,7 +9,7 @@
         body { font-family: 'Segoe UI', sans-serif; color:#1e293b; background:#f8fafc; }
 
         .topbar {
-            background:#1e3a8a; color:white; font-size:0.85rem;
+            background:#0B3D91; color:white; font-size:0.85rem;
             padding:0.5rem 2rem; display:flex; justify-content:space-between; flex-wrap:wrap;
         }
         .topbar span { margin-right:1.5rem; }
@@ -19,22 +19,36 @@
             justify-content:space-between; align-items:center;
             box-shadow:0 2px 6px rgba(0,0,0,0.06); position:sticky; top:0; z-index:10;
         }
-        nav .logo { font-weight:bold; font-size:1.3rem; color:#1e40af; }
+        nav .logo { font-weight:bold; font-size:1.3rem; color:#0B3D91; }
         nav .menu a {
             color:#334155; margin-left:1.5rem; text-decoration:none; font-weight:500;
         }
-        nav .menu a:hover, nav .menu a.active { color:#1e40af; }
+        nav .menu a:hover, nav .menu a.active { color:#0B3D91; }
         nav .menu a.btn-login {
-            background:#1e40af; color:white; padding:8px 18px; border-radius:6px; margin-left:1.5rem;
+            background:#0B3D91; color:white; padding:8px 18px; border-radius:6px; margin-left:1.5rem;
         }
-        nav .menu a.btn-login:hover { background:#1e3a8a; color:white; }
+        nav .menu a.btn-login:hover { background:#0B3D91; color:white; }
 
         main { min-height:70vh; }
 
         footer {
-            background:#0f172a; color:#cbd5e1; text-align:center; padding:2rem; margin-top:3rem;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: transparent;
         }
-
+        footer .footer-pill {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50px;
+            padding: 1rem 2.5rem;
+            color: #1e293b;
+            font-size: 0.9rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3);
+        }
         @media (max-width: 768px) {
             nav { flex-direction:column; gap:0.8rem; }
             nav .menu a { margin:0 0.6rem; font-size:0.9rem; }
@@ -71,8 +85,9 @@
     </main>
 
     <footer>
-        &copy; {{ date('Y') }} PAUD Al-Barokah. All rights reserved.
+        <div class="footer-pill">
+            &copy; {{ date('Y') }} PAUD Al-Barokah. All rights reserved.
+        </div>
     </footer>
-
 </body>
 </html>

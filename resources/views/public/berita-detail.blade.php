@@ -3,9 +3,9 @@
 
 @section('content')
 <div style="max-width:750px; margin:0 auto; padding:3rem 2rem;">
-    <a href="{{ route('berita.public') }}" style="color:#1e40af; text-decoration:none; font-size:0.9rem;">&larr; Kembali ke Berita</a>
+    <a href="{{ route('berita.public') }}" style="color:#0B3D91; text-decoration:none; font-size:0.9rem;">&larr; Kembali ke Berita</a>
 
-    <h1 style="color:#1e3a8a; margin:1rem 0 0.3rem;">{{ $berita->judul }}</h1>
+    <h1 style="color:#0B3D91; margin:1rem 0 0.3rem;">{{ $berita->judul }}</h1>
     <p style="color:#64748b; margin-bottom:1.5rem;">
         {{ $berita->tanggal->format('d-m-Y') }}
         @if ($berita->admin)

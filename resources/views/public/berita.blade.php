@@ -14,7 +14,7 @@
                 <div style="padding:1rem;">
                     <h3 style="color:#1e293b; margin-bottom:0.3rem;">{{ $item->judul }}</h3>
                     <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:0.6rem;">{{ $item->tanggal->format('d-m-Y') }}</p>
-                    <a href="{{ route('berita.detail', $item->id_berita) }}" style="color:#1e40af; font-weight:600; text-decoration:none; font-size:0.9rem;">Baca selengkapnya &rarr;</a>
+                    <a href="{{ route('berita.detail', $item->id_berita) }}" style="color:#0B3D91; font-weight:600; text-decoration:none; font-size:0.9rem;">Baca selengkapnya &rarr;</a>
                 </div>
             </div>
         @empty

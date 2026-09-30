@@ -19,7 +19,7 @@
 <div class="profil-wrap">
 
     <div class="profil-kiri">
-        <span style="display:inline-block; background:#e0e7ff; color:#1e40af; font-size:0.75rem; font-weight:600; padding:4px 12px; border-radius:20px; margin-bottom:0.8rem;">Sejarah Kami</span>
+        <span style="display:inline-block; background:#e0e7ff; color:#0B3D91; font-size:0.75rem; font-weight:600; padding:4px 12px; border-radius:20px; margin-bottom:0.8rem;">Sejarah Kami</span>
         <h2 style="color:#1e293b; font-size:1.4rem; margin-bottom:1rem;">Membangun Fondasi Masa Depan Sejak 2008</h2>
         <p style="line-height:1.7; color:#475569; margin-bottom:1rem;">
             PAUD Al-Barokah resmi didirikan pada tahun 2008 atas dasar kepedulian terhadap
@@ -63,11 +63,11 @@
     </div>
 
     <div class="profil-kanan">
-        <h2 style="color:#1e40af; font-size:1.2rem; margin-bottom:0.3rem; text-align:center;">Visi & Misi</h2>
+        <h2 style="color:#0B3D91; font-size:1.2rem; margin-bottom:0.3rem; text-align:center;">Visi & Misi</h2>
         <p style="color:#64748b; font-size:0.85rem; margin-bottom:1.2rem; text-align:center;">Komitmen kami dalam mendidik generasi penerus bangsa.</p>
 
         <div style="display:flex; gap:1rem;">
-            <div style="background:#1e3a8a; color:white; border-radius:12px; padding:1.3rem; flex:1; text-align:center;">
+            <div style="background:#0B3D91; color:white; border-radius:12px; padding:1.3rem; flex:1; text-align:center;">
                 <h3 style="margin-bottom:0.6rem; font-size:1rem;">Visi Kami</h3>
                 <p style="font-size:0.82rem; line-height:1.6; opacity:0.9;">
                     "Terwujudnya anak usia dini yang cerdas, ceria, mandiri, dan memiliki
@@ -75,7 +75,7 @@
                 </p>
             </div>
 
-            <div style="background:#1e40af; color:white; border-radius:12px; padding:1.3rem; flex:1;">
+            <div style="background:#0B3D91; color:white; border-radius:12px; padding:1.3rem; flex:1;">
                 <h3 style="margin-bottom:0.6rem; font-size:1rem; text-align:center;">Misi Kami</h3>
                 <ol style="font-size:0.8rem; line-height:1.7; padding-left:1.1rem; opacity:0.9;">
                     <li>Menyelenggarakan pendidikan yang menyenangkan dan berpusat pada anak.</li>

@@ -11,7 +11,7 @@
         .sidebar { width: 230px; background: #0f172a; color: #cbd5e1; padding: 1.5rem 0; flex-shrink: 0; }
         .sidebar .brand { color: white; font-weight: bold; font-size: 1.1rem; padding: 0 1.5rem 1.5rem; border-bottom: 1px solid #1e293b; margin-bottom: 1rem; }
         .sidebar a { display: block; color: #cbd5e1; text-decoration: none; padding: 0.75rem 1.5rem; font-size: 0.9rem; }
-        .sidebar a.active, .sidebar a:hover { background: #1e40af; color: white; }
+        .sidebar a.active, .sidebar a:hover { background: #0B3D91; color: white; }
         .sidebar form { margin-top: 1rem; border-top: 1px solid #1e293b; padding-top: 1rem; }
         .sidebar form button { width: 100%; background: none; border: none; color: #f87171; text-align: left; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; }
         .sidebar form button:hover { background: #1e293b; }
@@ -19,9 +19,9 @@
         .content { flex: 1; padding: 2rem; max-width: 100%; overflow-x: auto; }
         .content h1 { color:#1e293b; margin-bottom: 1.2rem; font-size: 1.5rem; }
 
-        .btn { display:inline-block; background:#1e40af; color:white; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:0.9rem; font-weight:500; border:none; cursor:pointer; }
-        .btn:hover { background:#1e3a8a; }
-        .btn-back { color:#1e40af; text-decoration:none; font-size:0.9rem; display:inline-block; margin-bottom:1rem; }
+        .btn { display:inline-block; background:#0B3D91; color:white; padding:9px 18px; border-radius:6px; text-decoration:none; font-size:0.9rem; font-weight:500; border:none; cursor:pointer; }
+        .btn:hover { background:#0B3D91; }
+        .btn-back { color:#0B3D91; text-decoration:none; font-size:0.9rem; display:inline-block; margin-bottom:1rem; }
 
         .alert-success { background:#dcfce7; color:#166534; padding:0.8rem 1rem; border-radius:8px; margin-bottom:1.2rem; font-size:0.9rem; }
 
@@ -31,14 +31,14 @@
         tr:last-child td { border-bottom:none; }
         img.thumb { width:55px; height:55px; object-fit:cover; border-radius:6px; }
 
-        .link-edit { color:#1e40af; text-decoration:none; margin-right:0.8rem; }
+        .link-edit { color:#0B3D91; text-decoration:none; margin-right:0.8rem; }
         .link-delete { color:#dc2626; background:none; border:none; cursor:pointer; font-size:0.9rem; }
 
         .form-card { background:white; padding:1.8rem; border-radius:10px; max-width:480px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
         .form-group { margin-bottom:1.1rem; }
         .form-group label { display:block; font-size:0.85rem; font-weight:600; color:#334155; margin-bottom:0.4rem; }
         .form-group input, .form-group textarea { width:100%; padding:0.6rem 0.8rem; border:1px solid #cbd5e1; border-radius:6px; font-size:0.9rem; font-family:inherit; }
-        .form-group input:focus, .form-group textarea:focus { outline:none; border-color:#1e40af; }
+        .form-group input:focus, .form-group textarea:focus { outline:none; border-color:#0B3D91; }
         .error-text { color:#dc2626; font-size:0.8rem; }
     </style>
 </head>

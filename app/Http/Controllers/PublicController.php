@@ -22,7 +22,7 @@ class PublicController extends Controller
 
     public function guru()
     {
-        $guru = Guru::all();
+        $guru = Guru::orderByRaw("CASE WHEN LOWER(jabatan) = 'kepala sekolah' THEN 0 ELSE 1 END")->orderBy('nama')->get();
         return view('public.guru', compact('guru'));
     }
 
