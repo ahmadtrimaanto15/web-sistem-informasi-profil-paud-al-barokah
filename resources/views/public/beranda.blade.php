@@ -24,11 +24,11 @@
         <h2 style="color:#0B3D91; font-size:0.95rem; font-weight:700; margin-bottom:0.7rem;">Profil Sekolah</h2>
         <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
             <div style="width:100%; height:130px; overflow:hidden;">
-                <img src="{{ asset('images/sekolah.jpg') }}" style="width:100%; height:100%; object-fit:cover; display:block;">
+                <img src="{{ asset('images/sekolah.jpeg') }}" style="width:100%; height:100%; object-fit:cover; display:block;">
             </div>
             <div style="padding:0.9rem;">
                 <p style="font-size:0.8rem; color:#64748b; line-height:1.5; margin-bottom:0.5rem;">
-                    PAUD Al-Barokah berdiri sejak tahun 2008 dengan komitmen memberikan
+                    PAUD Al-Barokah berdiri sejak tahun 2012 dengan komitmen memberikan
                     pendidikan berkualitas bagi anak usia dini. Kami percaya bahwa setiap
                     anak memiliki potensi luar biasa yang perlu dikembangkan.
                 </p>

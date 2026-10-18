@@ -9,11 +9,14 @@
         @forelse ($galeri as $item)
             <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
                 @if ($item->foto)
-                    <img src="{{ asset('storage/' . $item->foto) }}" style="width:100%; height:180px; object-fit:cover;">
+                    <img src="{{ asset('storage/' . $item->foto) }}" style="width:100%; height:180px; object-fit:cover; display:block;">
                 @endif
                 <div style="padding:0.8rem;">
                     <h3 style="font-size:0.95rem; color:#1e293b; margin-bottom:0.2rem;">{{ $item->judul }}</h3>
-                    <p style="font-size:0.8rem; color:#94a3b8;">{{ $item->tanggal->format('d-m-Y') }}</p>
+                    <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:0.4rem;">{{ $item->tanggal->format('d-m-Y') }}</p>
+                    @if ($item->deskripsi)
+                        <p style="font-size:0.85rem; color:#64748b; line-height:1.5;">{{ $item->deskripsi }}</p>
+                    @endif
                 </div>
             </div>
         @empty

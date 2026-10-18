@@ -10,11 +10,13 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        User::create([
-            'name' => 'Admin PAUD Al-Barokah',
-            'email' => 'admin@paudalbarokah.sch.id',
-            'password' => Hash::make('admin123'),
-            'role' => 'admin',
-        ]);
+        User::updateOrCreate(
+            ['email' => 'admin@paudalbarokah.sch.id'],
+            [
+                'name' => 'Admin PAUD Al-Barokah',
+                'password' => Hash::make('admin123'),
+                'role' => 'admin',
+            ]
+        );
     }
 }

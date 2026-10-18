@@ -16,14 +16,20 @@
         <p style="color:#334155; margin-bottom:1.2rem;">info@paudalbarokah.sch.id</p>
 
         <h3 style="color:#0B3D91; margin-bottom:0.3rem;">Jam Operasional</h3>
-        <p style="color:#334155;">Senin - Jumat: 08.00 - 12.00<br>Sabtu & Minggu: Libur</p>
+        <p style="color:#334155;">Senin - Jumat: 08.00 - 10.00<br>Sabtu & Minggu: Libur</p>
     </div>
+
     <div style="flex:1; min-width:280px;">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53355.03211022058!2d106.66520177543183!3d-6.311393652344794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41fe1a76b679fb%3A0x341110ba64933af5!2sPAUD%20AL-BAROKAH!5e0!3m2!1sid!2sid!4v1790149680154!5m2!1sid!2sid"
-            width="100%" height="280" style="border:0; border-radius:12px;"
-            allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
+        <div style="width:100%; height:320px; border-radius:12px; overflow:hidden; background:#e0e7ff;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53355.03211022058!2d106.66520177543183!3d-6.311393652344794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41fe1a76b679fb%3A0x341110ba64933af5!2sPAUD%20AL-BAROKAH!5e0!3m2!1sid!2sid!4v1790149680154!5m2!1sid!2sid"
+                width="100%" height="320" style="border:0; display:block;"
+                allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=PAUD+Al-Barokah+Kedung+Dalem+Mauk+Tangerang"
+           target="_blank"
+        </a>
     </div>
 </div>
 @endsection

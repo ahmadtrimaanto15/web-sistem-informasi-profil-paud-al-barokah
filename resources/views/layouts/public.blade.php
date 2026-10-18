@@ -61,7 +61,7 @@
         <div>
             <span>&#128222; (0895) 1501 5175</span>
         </div>
-        <div>Senin - Jumat, 08.00 - 12.00 WIB</div>
+        <div>Senin - Jumat, 08.00 - 10.00 WIB</div>
     </div>
 
     <nav>
