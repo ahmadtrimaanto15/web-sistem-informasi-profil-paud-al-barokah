@@ -23,7 +23,7 @@
         <h2 style="color:#1e293b; font-size:1.4rem; margin-bottom:1rem;">Sekilas tentang PAUD Al-Barokah</h2>
         <p style="line-height:1.7; color:#475569; margin-bottom:1rem;">
             PAUD Al-Barokah berdiri pada tahun 2012 di Kedung Dalem, Kecamatan Mauk, Kabupaten Tangerang.
-            Sekolah ini didirikan oleh Bapak Saepudin, selaku ketua yayasan, supaya anak-anak di sekitar
+            Sekolah ini didirikan oleh SAEPUDIN, selaku ketua yayasan, supaya anak-anak di sekitar
             punya tempat belajar yang dekat dari rumah.
         </p>
         <p style="line-height:1.7; color:#475569; margin-bottom:1rem;">
@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td style="padding:0.5rem 0; color:#94a3b8;">Pendiri</td>
-                    <td style="padding:0.5rem 0; color:#1e293b; font-weight:600;">Bapak Saepudin (Ketua Yayasan)</td>
+                    <td style="padding:0.5rem 0; color:#1e293b; font-weight:600;">SAEPUDIN (KETUA YAYASAN)</td>
                 </tr>
                 <tr>
                     <td style="padding:0.5rem 0; color:#94a3b8;">Kepala Sekolah</td>

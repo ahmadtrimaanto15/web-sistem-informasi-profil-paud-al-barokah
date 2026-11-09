@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\GuruController;
 use App\Http\Controllers\Admin\GaleriController;
 use App\Http\Controllers\Admin\BeritaController;
+use App\Http\Controllers\Admin\ProfilController;
 
 // ===== ROUTE PUBLIK (PENGUNJUNG) =====
 Route::get('/', [PublicController::class, 'beranda'])->name('beranda');
@@ -25,6 +26,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
     Route::middleware('auth')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/profil', [ProfilController::class, 'edit'])->name('profil.edit');
+        Route::put('/profil', [ProfilController::class, 'update'])->name('profil.update');
         Route::resource('guru', GuruController::class);
         Route::resource('galeri', GaleriController::class);
         Route::resource('berita', BeritaController::class)->parameters(['berita' => 'berita']);
